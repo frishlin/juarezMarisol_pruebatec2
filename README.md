@@ -54,5 +54,7 @@ Aplicación Web que permite agregar, listar y filtrar turnos o citas para una en
 ### Diagrama UML
 En base al análisis realizado, a continuación se muestra el diagrama UML que representa las clases y relaciones de este proyecto:
 
-![DiagramaTurnero](https://github.com/user-attachments/assets/8a29b992-ee96-4a72-8694-afccb879d309)
+![DiagramaTurnero](https://github.com/user-attachments/assets/bd986ce6-23ac-4ea1-a6e4-f4e369846639)
+
+
 
