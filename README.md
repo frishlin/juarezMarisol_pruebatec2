@@ -43,7 +43,7 @@ Aplicación Web que permite agregar, listar y filtrar turnos o citas para una en
 + Se asume que para facilitar la navegación del usuario, se deba tener un selector en el fronted, para que el usuario pueda elegir el estado para filtrar, en este caso, lo hará a través de un dopdrown.
 + Además del número del turno y el ciudadano asignado, se asume que es necesario visualizar la fecha y la descripción del trámite.
 + Se asume que los datos mínimos requeridos que debe tener un ciudadano son: **nombre**, **apellido**, **teléfono** y algún **dato único** como pueden ser la **CURP**, para una identificación más confiable.
-+ Se asume que los trámites son fijos, por tanto, serán seleccionables a través de un dropdown.
++ Se asume que los trámites y los ciudadanos son fijos, por tanto, serán seleccionables a través de un dropdown.
 + Se asume que al registrar un turno, el **estado inicial** sea **En espera**. Posteriormente el usuario podrá modificar este esatdo a **Ya atendido**.
 + Se asume que el formato de fecha para los turnos es YYYY-MM-DD (año-mes-día).
 + Se asume que los datos mínimos que debe tener un tipo de trámite son: **identificador** y **nombre**.
