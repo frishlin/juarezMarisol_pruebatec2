@@ -110,4 +110,27 @@ public class ControladoraPersistencia {
         }
     }
 
+    public Turno traerTurno(Long idTurno) {
+        return turnoJpa.findTurno(idTurno);
+    }
+
+    public void editarTurno(Turno turno) {
+        try {
+            turnoJpa.edit(turno);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public EstadoTurno obtenerEstadoPorNombre(String nombreEstado) {
+    EntityManager em = estadoTurnoJpa.getEntityManager();
+    try {
+        Query query = em.createQuery("SELECT e FROM EstadoTurno e WHERE e.nombre = :nombreEstado");
+        query.setParameter("nombreEstado", nombreEstado);
+        return (EstadoTurno) query.getSingleResult();
+    } finally {
+        em.close();
+    }
+}
+
 }

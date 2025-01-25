@@ -56,3 +56,27 @@ En base al análisis realizado, a continuación se muestra el diagrama UML que r
 
 ![DiagramaTurnero](https://github.com/user-attachments/assets/8a29b992-ee96-4a72-8694-afccb879d309)
 
+### Diagrama Entidad-Relación
+En base al análisis realizado, a continuación se muestra el diagrama E-R que representa la base de datos de este proyecto:
+
+
+
+# Funcionamiento                          
+En el proyecto se encuentra el archivo turnero.sql, correspondiente a la base de datos que cuenta con algunos datos para cargar.
+
+Primero, se debe importar el archivo **turnero.sql** utilizando algún gestor de bases de datos, como phpMyAdmin. Es importante asegurarse de que los servicios de Apache y MySQL estén en funcionamiento antes de realizar la importación.
+
+Una vez importado,el archivo y que los servicios de Apache y MySQL estén habilitados, se debe ejecutar el programa. El programafue desarrollado con el IDE Neatbeans en su versión 17, por lo cual se recomienda el uso de este entorno para evitar problemas de compatibilidad.
+
+Se pueden crear, listar, eliminar y editar Ciudadanos, para hacer más grande la lista.
+
+Para **Registrar un turno**, se debe hacer clic en el botón con este nombre, se deberá seleccionar una fecha, algún ciudadano de la lista y algún tipo de trámite, posteriormente se debe hacer clic en el botón **Registrar Turno** y la aplicación devolverá a la página principal.
+
+Para **Listar turnos**, se  debe hacer clic en el botón con este nombre. Inicialmente se listan todos los registros pero se pueden filtrar de dos maneras:
++ Al elegir un **Estado de turno** y hacer clic en el botón **Filtrar turno**, se mostrarán únicamente los registros que cumplan con dicho estado.
++ Al elegir una **Fecha** y hacer clic en el botón **Filtrar turno**, se mostrarán los registros que coincidan con esa fecha, sin importar el estado del turno.
+
+Al **Registrar un turno**, el sistema toma como predeterminado el estado **En espera**, posteriormente, al listar los turnos, y los estados **En espera** pueden ser cambiados a **Ya atendido** haciendo clic sobre el botón **Marcar como Atendido**.
+
+*Cada día, únicamente se pueden reservar **10 turnos**, si se desea reservar más de 10 turnos para el mismo día, el sistema muestra un mensaje advirtiendo que se no se pueden agregar más turnos para ese día y se invita a elegir otra fecha.*
+

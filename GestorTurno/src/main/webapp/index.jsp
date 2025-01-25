@@ -15,7 +15,6 @@
         <div class="mt-5 text-center">
 
             <a href="CargarDatosSv" class="btn btn-primary btn-lg">Registrar Turno</a>
-            <a href="ModificarTurnoSv" class="btn btn-primary btn-lg">ModificarTurnos</a>
             <a href="ListarTurnosSv" class="btn btn-primary btn-lg">ListarTurnos</a>
             
         </div>

@@ -1,9 +1,12 @@
+CREATE DATABASE turnero;
+USE turnero;
+
 -- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-01-2025 a las 19:54:50
+-- Tiempo de generación: 25-01-2025 a las 00:57:56
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -101,7 +104,7 @@ INSERT INTO `tipotramite` (`ID`, `NOMBRE`) VALUES
 CREATE TABLE `turno` (
   `ID` bigint(20) NOT NULL,
   `FECHA` date DEFAULT NULL,
-  `NUMEROTURNO` int(11) NOT NULL,
+  `NUMEROTURNO` int(11) DEFAULT NULL,
   `CIUDADANO_ID` bigint(20) DEFAULT NULL,
   `ESTADOTURNO_ID` bigint(20) DEFAULT NULL,
   `TIPOTRAMITE_ID` bigint(20) DEFAULT NULL

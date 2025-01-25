@@ -78,4 +78,14 @@ public class ControladoraLogica {
         return controlPersis.filtrarTurnosPorEstado(estadoTurno);
     }
 
+    public void cambiarEstadoTurno(Long idTurno, String ya_atendido) {
+        Turno turno = controlPersis.traerTurno(idTurno);
+        if (turno != null) {
+            EstadoTurno estado = controlPersis.obtenerEstadoPorNombre(ya_atendido);
+            if (estado != null) {
+                turno.setEstadoTurno(estado);
+                controlPersis.editarTurno(turno);
+            }
+        }
+    }
 }
