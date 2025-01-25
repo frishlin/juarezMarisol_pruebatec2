@@ -67,9 +67,9 @@ En base al análisis realizado, a continuación se muestra el diagrama E-R que r
 # Funcionamiento                          
 En el proyecto se encuentra el archivo **turnero.sql**, correspondiente a la base de datos que cuenta con algunos datos para cargar.
 
-Primero, se debe importar este archivo, utilizando algún gestor de bases de datos como phpMyAdmin. Es importante asegurarse de que los servicios de Apache y MySQL estén en funcionamiento antes de realizar la importación.
+Primero, se debe importar este archivo, utilizando algún gestor de bases de datos como phpMyAdmin. Es importante asegurarse de que los servicios de Apache y MySQL estén en funcionamiento antes de realizar la importación y durante la ejecución del programa.
 
-Una vez importado,el archivo y que los servicios de Apache y MySQL estén habilitados, se debe ejecutar el programa. El programafue desarrollado con el IDE Neatbeans en su versión 17, por lo cual se recomienda el uso de este entorno para evitar problemas de compatibilidad.
+Una vez importado el archivo. El programa fue desarrollado con el IDE Neatbeans en su versión 17, por lo cual se recomienda el uso de este entorno para evitar problemas de compatibilidad.
 
 Se pueden crear, listar, eliminar y editar Ciudadanos, para hacer más grande la lista.
 
